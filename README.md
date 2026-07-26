@@ -12,6 +12,7 @@ Each project focuses on a specific concept, framework, or feature used in modern
 |---------|-------------|
 | **01-first-agent** | Build and run your first AI agent using the OpenAI Agents SDK |
 | **02-gemini-agent-openai-sdk** | Build an AI agent using Google Gemini with the OpenAI Agents SDK via the OpenAI-compatible API |
+| **03-chainlit-playground/01-basic-chatbot** | Build a conversational AI chatbot using Chainlit, OpenAI Agents SDK, and Gemini |
 
 ---
 
@@ -20,8 +21,9 @@ Each project focuses on a specific concept, framework, or feature used in modern
 - Python
 - UV
 - OpenAI Agents SDK
-- OpenAI API
+- Chainlit
 - Google Gemini API
+- OpenAI Compatible API
 - python-dotenv
 
 ---
@@ -45,15 +47,21 @@ Each project focuses on a specific concept, framework, or feature used in modern
 
 ## 🚀 Goal
 
-This repository documents my journey from building a simple AI agent to developing production-ready Agentic AI systems using modern Python frameworks and tools.
+This repository documents my journey of learning Agentic AI by building practical projects with modern AI frameworks and tools.
 
-Each project contains:
+Topics include:
 
-- Project overview
-- Installation guide
-- Source code
-- Learning resources
-- Official documentation references
+- OpenAI Agents SDK
+- Google Gemini Integration
+- Chainlit
+- Conversation Memory
+- AI Chatbots
+- Multi-Agent Systems (coming soon)
+- Tool Calling (coming soon)
+- RAG (coming soon)
+- MCP (coming soon)
+
+Each project contains its own detailed documentation, setup guide, and learning resources.
 
 ---
 
