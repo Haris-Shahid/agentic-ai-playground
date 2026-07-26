@@ -2,19 +2,21 @@
 
 A simple conversational AI chatbot built with **Chainlit**, **OpenAI Agents SDK**, and **Google Gemini (OpenAI Compatible API)**.
 
-This project demonstrates how to build an interactive AI chatbot with persistent conversation history using the OpenAI Agents SDK inside a Chainlit application.
+This project demonstrates how to build an interactive AI chatbot with a web interface, persistent conversation history, session management, and Google Gemini integration using the OpenAI Agents SDK.
 
 ---
 
 ## Features
 
 - Interactive chatbot UI using Chainlit
-- Google Gemini integration via OpenAI Compatible API
+- Google Gemini integration through the OpenAI Compatible API
 - OpenAI Agents SDK
 - Session-based chat history
 - Persistent conversation context
+- Async request handling
 - Environment variable management with python-dotenv
 - UV project management
+- Python type hints
 
 ---
 
@@ -34,7 +36,7 @@ This project demonstrates how to build an interactive AI chatbot with persistent
 ```
 01-basic-chatbot/
 │
-├── .env
+├── .env.example
 ├── main.py
 ├── pyproject.toml
 ├── uv.lock
@@ -43,9 +45,31 @@ This project demonstrates how to build an interactive AI chatbot with persistent
 
 ---
 
+## Prerequisites
+
+Before running this project, make sure you have:
+
+- Python 3.12
+- UV package manager
+- Google Gemini API Key
+
+### Install Python 3.12 using UV
+
+```bash
+uv python install 3.12
+```
+
+Verify installed Python versions:
+
+```bash
+uv python list
+```
+
+---
+
 ## Installation
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Haris-Shahid/agentic-ai-playground.git
@@ -55,16 +79,15 @@ cd agentic-ai-playground/03-chainlit-playground/01-basic-chatbot
 
 ---
 
-### Create the virtual environment
+### 2. Create a virtual environment using Python 3.12
 
 ```bash
-uv python install 3.12
 uv venv --python 3.12
 ```
 
 ---
 
-### Install dependencies
+### 3. Install project dependencies
 
 ```bash
 uv sync
@@ -72,37 +95,44 @@ uv sync
 
 ---
 
-### Configure environment variables
+### 4. Configure environment variables
 
 Create a `.env` file.
 
 ```env
-GEMINI_API_KEY=YOUR_API_KEY
-BASE_URL=your_gemini_base_url_for_openai
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
 ```
 
 ---
 
-### Run the application
+### 5. Run the application
 
 ```bash
 uv run chainlit run main.py -w
 ```
 
+The application will be available at:
+
+```
+http://localhost:8000
+```
+
 ---
 
-## Learning Outcomes
+## What I Learned
 
-This project helped me learn:
+During this project, I learned about:
 
-- Building conversational AI applications
-- Chainlit event lifecycle
-- Session management
-- OpenAI Agents SDK
-- Async programming
-- RunConfig
-- Conversation history management
-- Gemini OpenAI Compatible API
+- Building AI chat applications with Chainlit
+- OpenAI Agents SDK fundamentals
+- Google Gemini OpenAI Compatible API
+- Async programming with `async` and `await`
+- Session management using `cl.user_session`
+- Maintaining conversation history
+- Agent configuration with `RunConfig`
+- Environment variable management using python-dotenv
+- Creating reproducible Python projects with UV
 
 ---
 
@@ -110,35 +140,67 @@ This project helped me learn:
 
 ### Python 3.14 Compatibility
 
-While building this project, I encountered runtime issues with:
+Initially, this project was created using **Python 3.14**.
 
-- Chainlit
+While running Chainlit, I encountered runtime errors related to:
+
 - AnyIO
 - Event loop handling
+- ASGI application startup
 
-The project worked correctly after switching from:
+After investigating the issue, I recreated the project using **Python 3.12**, which resolved the compatibility problems.
 
-```
-Python 3.14
-```
-
-to
-
-```
-Python 3.12
-```
-
-which is currently a more stable version for this stack.
+This project is therefore developed and tested with **Python 3.12**.
 
 ---
 
-## Resources
+## Useful UV Commands
 
-### UV
+Install Python 3.12
+
+```bash
+uv python install 3.12
+```
+
+List installed Python versions
+
+```bash
+uv python list
+```
+
+Create a virtual environment
+
+```bash
+uv venv --python 3.12
+```
+
+Install project dependencies
+
+```bash
+uv sync
+```
+
+Add a package
+
+```bash
+uv add package-name
+```
+
+Run the application
+
+```bash
+uv run chainlit run main.py -w
+```
+
+---
+
+## Learning Resources
+
+### UV Documentation
 
 https://docs.astral.sh/uv/
 
-### Chainlit
+### Chainlit Documentation
 
 https://docs.chainlit.io/
 
@@ -146,7 +208,7 @@ https://docs.chainlit.io/
 
 https://openai.github.io/openai-agents-python/
 
-### Google Gemini OpenAI Compatibility
+### Google Gemini OpenAI Compatible API
 
 https://ai.google.dev/gemini-api/docs/openai
 
