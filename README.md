@@ -14,7 +14,7 @@ Each project focuses on a specific concept, framework, or feature used in modern
 | [02 Gemini Agent](./02_gemini_agent_openai_sdk/) | Use Google Gemini through its OpenAI-compatible API |
 | [03 Chainlit Playground](./03-chainlit-playground/) | A collection of interactive AI applications built with Chainlit |
 | ├── [01 Basic Chatbot](./03-chainlit-playground/01-basic-chatbot/) | Build a basic conversational AI chatbot with Chainlit, Gemini, and session-based chat history |
-| └── [02 Streaming Chatbot](./03-chainlit-playground/02-streaming-chatbot/) | Stream Gemini responses token by token using Chainlit and the OpenAI Agents SDK |
+| └── [02 Streaming Chatbot](./03-chainlit-playground/02-streaming/) | Stream Gemini responses token by token using Chainlit and the OpenAI Agents SDK |
 ---
 
 ## 🛠️ Tech Stack
