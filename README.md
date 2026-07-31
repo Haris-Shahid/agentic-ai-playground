@@ -15,6 +15,8 @@ Each project focuses on a specific concept, framework, or feature used in modern
 | [03 Chainlit Playground](./03-chainlit-playground/) | A collection of interactive AI applications built with Chainlit |
 | ├── [01 Basic Chatbot](./03-chainlit-playground/01-basic-chatbot/) | Build a basic conversational AI chatbot with Chainlit, Gemini, and session-based chat history |
 | └── [02 Streaming Chatbot](./03-chainlit-playground/02-streaming/) | Stream Gemini responses token by token using Chainlit and the OpenAI Agents SDK |
+| [04 Tools](./04-tools/) | Learn how AI agents use custom Python functions as tools |
+| └── [01 Basic Function Tool](./04-tools/01-basic-function-tool/) | Create custom function tools, enable agent tool calling, and explore direct tool-output behavior |
 ---
 
 ## 🛠️ Tech Stack
@@ -33,7 +35,10 @@ Each project focuses on a specific concept, framework, or feature used in modern
 
 - ✅ First AI Agent
 - ✅ Gemini Agent using OpenAI SDK
-- ⏳ Tool Calling
+- ✅ Chainlit Integration
+- ✅ Streaming Responses
+- ✅ Basic Tool Calling
+- ⏳ Advanced Tool Calling
 - ⏳ Handoffs
 - ⏳ Memory
 - ⏳ Guardrails
@@ -41,7 +46,6 @@ Each project focuses on a specific concept, framework, or feature used in modern
 - ⏳ MCP (Model Context Protocol)
 - ⏳ RAG (Retrieval-Augmented Generation)
 - ⏳ LangGraph
-- ⏳ Streaming
 - ⏳ FastAPI Integration
 
 ---
@@ -50,17 +54,23 @@ Each project focuses on a specific concept, framework, or feature used in modern
 
 This repository documents my journey of learning Agentic AI by building practical projects with modern AI frameworks and tools.
 
-Topics include:
+Topics covered and planned include:
 
 - OpenAI Agents SDK
 - Google Gemini Integration
-- Chainlit
-- Conversation Memory
+- Chainlit AI Applications
 - AI Chatbots
-- Multi-Agent Systems (coming soon)
-- Tool Calling (coming soon)
-- RAG (coming soon)
-- MCP (coming soon)
+- Streaming Responses
+- Basic Tool Calling
+- Advanced Tool Calling *(coming soon)*
+- Handoffs *(coming soon)*
+- Memory *(coming soon)*
+- Guardrails *(coming soon)*
+- Multi-Agent Systems *(coming soon)*
+- MCP — Model Context Protocol *(coming soon)*
+- RAG — Retrieval-Augmented Generation *(coming soon)*
+- LangGraph *(coming soon)*
+- FastAPI Integration *(coming soon)*
 
 Each project contains its own detailed documentation, setup guide, and learning resources.
 
